@@ -4,12 +4,14 @@ function listTemplate(items) {
   return items.map((item) => `<li>${item}</li>`).join("");
 }
 
-function projectActionTemplate(url, label, placeholderLabel) {
-  if (!url) {
-    return `<span class="project-link project-link-disabled" aria-disabled="true">${placeholderLabel}</span>`;
+function projectActionTemplate(url, label, placeholderLabel, ariaLabel) {
+  const isPlaceholder = !url || url === "#";
+
+  if (isPlaceholder) {
+    return `<a class="project-link project-link-placeholder" href="#" aria-label="${ariaLabel}" title="Link será adicionado em breve">${placeholderLabel} <span aria-hidden="true">↗</span></a>`;
   }
 
-  return `<a class="project-link" href="${url}" target="_blank" rel="noopener noreferrer">${label} <span aria-hidden="true">↗</span></a>`;
+  return `<a class="project-link" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${ariaLabel}">${label} <span aria-hidden="true">↗</span></a>`;
 }
 
 function projectDetailsTemplate(project) {
@@ -44,8 +46,8 @@ function featuredProjectTemplate(project) {
         <div class="project-footer">
           <span class="project-status">${project.status}</span>
           <div class="project-actions">
-            ${projectActionTemplate(project.repository, "GitHub", "GitHub em breve")}
-            ${projectActionTemplate(project.deploy, "Deploy", "Deploy em breve")}
+            ${projectActionTemplate(project.repository, "Ver GitHub", "Ver GitHub", `Ver código-fonte do projeto ${project.title} no GitHub`)}
+            ${projectActionTemplate(project.deploy, "Ver Deploy", "Ver Deploy", `Ver projeto ${project.title} em produção`)}
           </div>
         </div>
       </div>
@@ -69,8 +71,8 @@ function secondaryProjectTemplate(project, index) {
       <div class="project-footer">
         <span class="project-status">${project.status}</span>
         <div class="project-actions">
-          ${projectActionTemplate(project.repository, "GitHub", "GitHub em breve")}
-          ${projectActionTemplate(project.deploy, "Deploy", "Deploy em breve")}
+          ${projectActionTemplate(project.repository, "Ver GitHub", "Ver GitHub", `Ver código-fonte do projeto ${project.title} no GitHub`)}
+          ${projectActionTemplate(project.deploy, "Ver Deploy", "Ver Deploy", `Ver projeto ${project.title} em produção`)}
         </div>
       </div>
     </article>

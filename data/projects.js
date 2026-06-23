@@ -15,7 +15,8 @@
     result: "Demonstra que consigo transformar uma regra de negócio simples em uma aplicação web estruturada, com preocupação em dados, autenticação, deploy e documentação.",
     status: "Projeto principal · acadêmico em evolução",
     repository: "https://github.com/KaykEstecio/NANDSBURGUER",
-    deploy: "",
+    // TODO: inserir aqui o link real do deploy do NANDS Burger quando estiver disponível.
+    deploy: "#",
     image: "assets/images/projects/nands-burguer-preview.webp",
     imageAlt: "Conceito visual do sistema NANDS Burger com cardápio, carrinho e experiência de pedidos",
     featured: true,
@@ -35,8 +36,10 @@
     stack: ["Python", "Flask", "SQL", "HTML", "CSS"],
     result: "Mostra minha base em desenvolvimento web com Python, organização de rotas, autenticação, CRUD e aplicação de regras de negócio em um contexto prático.",
     status: "Projeto acadêmico · documentação em evolução",
-    repository: "",
-    deploy: "",
+    // TODO: inserir aqui o link real do repositório do Sistema de Aluguel de Veículos quando estiver disponível.
+    repository: "#",
+    // TODO: inserir aqui o link real do deploy do Sistema de Aluguel de Veículos quando estiver disponível.
+    deploy: "#",
   },
   {
     title: "Controle de Gastos",
@@ -53,7 +56,9 @@
     stack: ["Python", "Lógica de programação", "Manipulação de dados"],
     result: "Demonstra fundamentos importantes para backend: lógica, validação, organização de dados e evolução gradual de um script para uma aplicação mais completa.",
     status: "Projeto de estudo · evolução contínua",
-    repository: "",
-    deploy: "",
+    // TODO: inserir aqui o link real do repositório do Controle de Gastos quando estiver disponível.
+    repository: "#",
+    // TODO: inserir aqui o link real do deploy do Controle de Gastos quando estiver disponível.
+    deploy: "#",
   },
 ];

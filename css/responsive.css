@@ -250,3 +250,25 @@
     display: none;
   }
 }
+
+@media (max-width: 560px) {
+  .project-actions {
+    width: 100%;
+  }
+
+  .project-actions .project-link {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .experience-item,
+  .experience-item-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-item-featured {
+    padding: 1.35rem;
+  }
+}
