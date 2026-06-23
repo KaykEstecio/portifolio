@@ -1,85 +1,41 @@
-# � Portfólio - Kayk Estécio | Deadpool Theme
+﻿# Portfólio - Kayk Estécio
 
-Portfólio pessoal com tema Deadpool, design minimalista e animações interativas.
+Portfólio pessoal de Kayk Estécio, estudante de Análise e Desenvolvimento de Sistemas com foco em backend Python, APIs, bancos de dados e desenvolvimento web.
 
-## 🎯 Sobre
+## Estrutura
 
-Desenvolvedor Python Backend especializado em FastAPI, SQLModel e arquitetura de sistemas escaláveis.
-
-## 🎨 Design
-
-- **Tema**: Deadpool (Preto, Vermelho, Branco)
-- **Estilo**: Minimalista e moderno
-- **Inspiração**: benscott.dev
-
-## ✨ Funcionalidades
-
-- ✅ **Custom Cursor** - Cursor vermelho personalizado
-- ✅ **Partículas** - Efeito de partículas vermelhas no background
-- ✅ **Typing Effect** - Animação de digitação no nome
-- ✅ **Glitch Effect** - Efeito de distorção digital
-- ✅ **Scroll Reveal** - Elementos aparecem ao scrollar
-- ✅ **Hover Glow** - Cards brilham no hover
-- ✅ **Navbar Effect** - Transparente que muda ao scrollar
-- ✅ **Theme Toggle** - Alternar entre tema claro/escuro
-
-## �️ Tecnologias
-
-- HTML5
-- CSS3 (Variáveis, Grid, Flexbox, Animações)
-- JavaScript Vanilla (ES6+)
-- Font Awesome 6
-- Google Fonts (Inter)
-
-## 📁 Estrutura
-
-```
-portifolio/
-├── index.html          # Página principal
-├── css/
-│   └── style.css      # Estilos e animações
-├── js/
-│   └── main.js        # Funcionalidades
-└── README.md          # Documentação
+```text
+.
+├── assets/             # Currículo, imagens e ícones
+├── css/                # Tokens, base, componentes, seções e responsividade
+├── data/projects.js    # Fonte única dos projetos
+├── js/                 # Navegação, renderização de projetos e inicialização
+├── index.html
+├── robots.txt
+└── sitemap.xml
 ```
 
-## 🚀 Deploy
+## Tecnologias
 
-### GitHub Pages
+- HTML semântico
+- CSS responsivo
+- JavaScript com ES Modules
+- GitHub Pages
+
+## Desenvolvimento local
+
+Como o projeto usa ES Modules, execute um servidor HTTP local:
+
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/portifolio.git
-git push -u origin main
-# Ative GitHub Pages em Settings > Pages
+python -m http.server 4173
 ```
 
-### Netlify (Recomendado para bio)
-1. Acesse [netlify.com](https://netlify.com)
-2. Arraste a pasta do projeto
-3. Pronto! URL gerada em segundos
+Depois acesse `http://localhost:4173`.
 
-### Vercel
-```bash
-npm i -g vercel
-vercel --prod
-```
+## Conteúdo
 
-## � Link na Bio
+Os projetos são mantidos em `data/projects.js`. Informações profissionais e links principais ficam em `index.html`.
 
-Após o deploy, adicione a URL no Instagram:
-```
-https://seusite.netlify.app
-```
+## Publicação
 
-## 👨‍💻 Contato
-
-- 📧 kayknascimento21@gmail.com
-- 💼 linkedin.com/in/kaykestecio
-- 🐙 github.com/KaykEstecio
-
----
-
-⭐ **Desenvolvido com 💀 e código** ⭐
+O workflow em `.github/workflows/deploy.yml` publica a branch `main` no GitHub Pages.

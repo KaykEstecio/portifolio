@@ -1,138 +1,82 @@
-﻿<!DOCTYPE html>
-<html lang='pt-BR'>
+﻿<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Kayk Estécio | Desenvolvedor Python Backend</title>
-    <meta name='description' content='Desenvolvedor Python Backend especializado em FastAPI, SQLModel e sistemas escaláveis.'>
-    
-    <link rel='preconnect' href='https://fonts.googleapis.com'>
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
-    <link rel='stylesheet' href='css/style.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fa">
+    <title>Kayk Estécio | Estudante de ADS e Desenvolvedor Backend Python</title>
+    <meta name="description" content="Portfólio de Kayk Estécio, estudante de Análise e Desenvolvimento de Sistemas com foco em backend Python, APIs, bancos de dados e desenvolvimento web.">
+    <meta name="author" content="Kayk Estécio">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Kayk Estécio | Backend Python e APIs">
+    <meta property="og:description" content="Projetos e trajetória de um estudante de ADS em busca da primeira oportunidade em tecnologia.">
+    <meta property="og:url" content="https://kaykestecio.github.io/portifolio/">
+    <meta property="og:image" content="https://kaykestecio.github.io/portifolio/assets/images/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://kaykestecio.github.io/portifolio/">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Kayk Estécio","url":"https://kaykestecio.github.io/portifolio/","email":"mailto:kayknascimento21@gmail.com","sameAs":["https://github.com/KaykEstecio","https://linkedin.com/in/kaykestecio"],"knowsAbout":["Python","FastAPI","APIs REST","PostgreSQL","SQLModel","Desenvolvimento Web"]}
+    </script>
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class='custom-cursor' id='customCursor'></div>
-    <div class='custom-cursor-dot' id='customCursorDot'></div>
-
-    <!-- Particles Background -->
-    <div class='particles-container' id='particlesContainer'></div>
-
-    <nav class='navbar'>
-        <div class='nav-container'>
-            <a href='#home' class='nav-logo'>Kayk Estécio</a>
-            <ul class='nav-menu'>
-                <li><a href='#home' class='nav-link'>Início</a></li>
-                <li><a href='#about' class='nav-link'>Sobre</a></li>
-                <li><a href='#projects' class='nav-link'>Projetos</a></li>
-                <li><a href='#contact' class='nav-link'>Contato</a></li>
-            </ul>
-            <button class='theme-toggle' id='themeToggle' aria-label='Alternar tema'>
-                <i class='fas fa-sun'></i>
-            </button>
-            <button class='nav-toggle' id='navToggle'>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+    <header class="site-header" data-header>
+        <div class="container header-inner">
+            <a class="brand" href="#inicio" aria-label="Kayk Estécio, voltar ao início"><span class="brand-mark" aria-hidden="true">KE</span><span>Kayk Estécio</span></a>
+            <nav class="site-nav" aria-label="Navegação principal">
+                <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+                <div class="nav-menu" id="nav-menu" data-nav-menu>
+                    <a href="#sobre">Sobre</a><a href="#tecnologias">Tecnologias</a><a href="#projetos">Projetos</a><a href="#formacao">Formação</a><a href="#contato">Contato</a>
+                    <a class="nav-resume" href="assets/documents/kayk-estecio-curriculo.pdf" target="_blank" rel="noopener noreferrer">Currículo</a>
+                </div>
+            </nav>
         </div>
-    </nav>
-
-    <section id='home' class='hero'>
-        <div class='container'>
-            <div class='hero-content'>
-                <h1 class='hero-title'>Olá, sou <span class='name glitch'>Kayk Estécio</span></h1>
-                <p class='hero-subtitle reveal'>Desenvolvedor Python Backend apaixonado por construir sistemas escaláveis e soluções inovadoras.</p>
-                <div class='hero-buttons reveal stagger-1'>
-                    <a href='#projects' class='btn btn-primary'>Ver meus trabalhos</a>
-                    <a href='#contact' class='btn btn-secondary'>Entrar em contato</a>
+    </header>
+    <main id="main-content">
+        <section class="hero section" id="inicio" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="role-line">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                    <h1 id="hero-title">Construo APIs e aplicações web com <span>Python</span>, FastAPI e bancos de dados.</h1>
+                    <p class="hero-intro">Estou desenvolvendo minha base profissional em backend e busco minha primeira oportunidade para contribuir com projetos reais, aprender com uma equipe e evoluir como desenvolvedor.</p>
+                    <div class="hero-actions"><a class="button button-primary" href="#projetos">Conhecer projetos</a><a class="button button-secondary" href="assets/documents/kayk-estecio-curriculo.pdf" target="_blank" rel="noopener noreferrer">Baixar currículo</a></div>
+                    <div class="hero-links" aria-label="Perfis profissionais"><a href="https://github.com/KaykEstecio" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/kaykestecio" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+                </div>
+                <aside class="architecture-card" aria-label="Resumo técnico">
+                    <div class="architecture-header"><span>foco_atual.json</span><span class="status-dot">disponível</span></div>
+                    <dl class="architecture-list"><div><dt>backend</dt><dd>Python · FastAPI</dd></div><div><dt>dados</dt><dd>PostgreSQL · SQLModel</dd></div><div><dt>interfaces</dt><dd>REST · OpenAPI · Web</dd></div><div><dt>objetivo</dt><dd>Estágio ou posição júnior</dd></div></dl>
+                    <p class="architecture-note"><span aria-hidden="true">→</span> Interesse em backend, APIs, automação e integração entre serviços.</p>
+                </aside>
+            </div>
+        </section>
+        <section class="section section-bordered" id="sobre" aria-labelledby="about-title">
+            <div class="container split-section"><div class="section-heading"><p class="section-index">01 / Sobre</p><h2 id="about-title">Uma base técnica construída com prática e curiosidade.</h2></div><div class="about-copy"><p>Sou estudante de Análise e Desenvolvimento de Sistemas e estou construindo minha base profissional em desenvolvimento backend com Python.</p><p>Tenho estudado criação de APIs, modelagem de dados, autenticação, validação, documentação e integração entre serviços. Meus projetos são o espaço onde transformo esses estudos em decisões de arquitetura e código que pode ser avaliado.</p><p>Busco minha primeira oportunidade para colaborar com uma equipe, receber boas revisões e assumir desafios progressivamente maiores. Fora do computador, gosto de ler, me manter em movimento e tocar violão.</p></div></div>
+        </section>
+        <section class="section" id="tecnologias" aria-labelledby="skills-title">
+            <div class="container"><div class="section-heading section-heading-horizontal"><div><p class="section-index">02 / Tecnologias</p><h2 id="skills-title">Ferramentas ligadas ao que construo.</h2></div><p>Sem barras de porcentagem: cada tecnologia aparece no contexto em que é aplicada.</p></div>
+                <div class="tech-list">
+                    <article class="tech-group"><p class="tech-number">01</p><div><h3>Backend</h3><p>Criação de regras de negócio, validações e serviços web com Python.</p></div><ul aria-label="Tecnologias de backend"><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>SQLModel</li></ul></article>
+                    <article class="tech-group"><p class="tech-number">02</p><div><h3>APIs e dados</h3><p>Contratos REST, documentação OpenAPI e persistência estruturada.</p></div><ul aria-label="Tecnologias de APIs e dados"><li>REST</li><li>PostgreSQL</li><li>SQLite</li><li>Redis</li></ul></article>
+                    <article class="tech-group"><p class="tech-number">03</p><div><h3>Web e fluxo de trabalho</h3><p>Interfaces responsivas e versionamento para entregar projetos completos.</p></div><ul aria-label="Tecnologias web e ferramentas"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git e GitHub</li></ul></article>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id='about' class='about'>
-        <div class='container'>
-            <h2 class='section-title reveal'>Sobre</h2>
-            <div class='about-content'>
-                <p class='reveal stagger-1'>Totalmente comprometido com a filosofia de aprendizado contínuo, sou um desenvolvedor Python Backend com profunda paixão por FastAPI, SQLModel e tudo relacionado a desenvolvimento backend. A combinação única de criatividade, lógica, tecnologia e nunca parar de descobrir coisas novas, alimenta minha empolgação e paixão pelo desenvolvimento de software.</p>
-                <p class='reveal stagger-2'>Quando não estou no computador, gosto de passar meu tempo lendo, me mantendo em forma e tocando violão.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id='projects' class='projects'>
-        <div class='container'>
-            <h2 class='section-title reveal'>Projetos</h2>
-            <div class='projects-grid'>
-                <div class='project-card reveal-left stagger-1 hover-glow'>
-                    <h3>BookMarket API</h3>
-                    <p>Sistema completo de e-commerce de livros construído com FastAPI, SQLModel, PostgreSQL e Redis.</p>
-                    <div class='project-links'>
-                        <a href='https://github.com/KaykEstecio/API-de-Gerenciamento-de-Biblioteca' target='_blank' class='project-link'>
-                            <i class='fab fa-github'></i> Ver código
-                        </a>
-                    </div>
-                </div>
-                <div class='project-card reveal-scale stagger-2 hover-glow'>
-                    <h3>Encurtador de URL</h3>
-                    <p>Sistema escalável de encurtamento de URLs construído com FastAPI, Redis e analytics.</p>
-                    <div class='project-links'>
-                        <a href='https://github.com/KaykEstecio/encurtador_de_URL' target='_blank' class='project-link'>
-                            <i class='fab fa-github'></i> Ver código
-                        </a>
-                    </div>
-                </div>
-                <div class='project-card reveal-scale stagger-3 hover-glow'>
-                    <h3>API de Gerenciamento de Usuários</h3>
-                    <p>API RESTful para gerenciamento de usuários construída com FastAPI e SQLAlchemy.</p>
-                    <div class='project-links'>
-                        <a href='https://github.com/KaykEstecio/api.cadastro' target='_blank' class='project-link'>
-                            <i class='fab fa-github'></i> Ver código
-                        </a>
-                    </div>
-                </div>
-                <div class='project-card reveal-right stagger-4 hover-glow'>
-                    <h3>Sabor Novo</h3>
-                    <p>API para gestão de restaurantes construída com FastAPI, PostgreSQL e WebSocket.</p>
-                    <div class='project-links'>
-                        <a href='https://github.com/KaykEstecio/sabor-novo' target='_blank' class='project-link'>
-                            <i class='fab fa-github'></i> Ver código
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id='contact' class='contact'>
-        <div class='container'>
-            <h2 class='section-title reveal'>Contato</h2>
-            <div class='contact-content'>
-                <p class='reveal stagger-1'>Tem alguma dúvida ou quer trabalhar junto? Entre em contato e responderei o mais rápido possível.</p>
-                <div class='contact-info'>
-                    <a href='mailto:kayknascimento21@gmail.com' class='contact-item reveal-left stagger-2'>
-                        <i class='fas fa-envelope'></i> kayknascimento21@gmail.com
-                    </a>
-                    <a href='https://github.com/KaykEstecio' target='_blank' class='contact-item reveal stagger-3'>
-                        <i class='fab fa-github'></i> github.com/KaykEstecio
-                    </a>
-                    <a href='https://linkedin.com/in/kaykestecio' target='_blank' class='contact-item reveal-right stagger-4'>
-                        <i class='fab fa-linkedin'></i> linkedin.com/in/kaykestecio
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class='footer'>
-        <div class='container'>
-            <p>&copy; 2026 Kayk Estécio. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src='js/main.js?v=3'></script>
+        </section>
+        <section class="section projects-section" id="projetos" aria-labelledby="projects-title"><div class="container"><div class="section-heading section-heading-horizontal"><div><p class="section-index section-index-light">03 / Projetos</p><h2 id="projects-title">Projetos em destaque</h2></div><p>Estudos práticos de APIs, persistência e organização de regras de negócio.</p></div><div class="projects-list" data-projects-list aria-live="polite"></div><noscript><p class="noscript-message">Ative o JavaScript para visualizar os detalhes dos projetos. Os repositórios continuam disponíveis no <a href="https://github.com/KaykEstecio">GitHub</a>.</p></noscript></div></section>
+        <section class="section" id="formacao" aria-labelledby="education-title"><div class="container split-section"><div class="section-heading"><p class="section-index">04 / Formação</p><h2 id="education-title">Aprendizado contínuo, com direção.</h2></div><div class="education-list"><article class="education-item"><div><p class="education-status">Em andamento</p><h3>Análise e Desenvolvimento de Sistemas</h3></div><p>Formação voltada a desenvolvimento de software, bancos de dados, análise de sistemas e fundamentos de engenharia.</p></article><article class="education-item"><div><p class="education-status">Prática independente</p><h3>Backend Python e desenvolvimento web</h3></div><p>Aplicação dos estudos em APIs próprias, documentação técnica, modelagem de dados e publicação de código no GitHub.</p></article></div></div></section>
+        <section class="section contact-section" id="contato" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="section-index">05 / Contato</p><h2 id="contact-title">Vamos conversar sobre uma primeira oportunidade?</h2></div><div class="contact-copy"><p>Tenho interesse em estágio, posição júnior e projetos nos quais eu possa contribuir com backend Python, APIs ou desenvolvimento web.</p><a class="contact-email" href="mailto:kayknascimento21@gmail.com">kayknascimento21@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/KaykEstecio" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://linkedin.com/in/kaykestecio" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="assets/documents/kayk-estecio-curriculo.pdf" target="_blank" rel="noopener noreferrer">Currículo em PDF</a></div></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><p>Kayk Estécio · Backend Python e desenvolvimento web</p><p>© <span data-current-year>2026</span> · Feito com HTML, CSS e JavaScript.</p></div></footer>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
