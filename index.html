@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Kayk Estécio | Desenvolvedor Python Backend</title>
+    <meta name='description' content='Desenvolvedor Python Backend especializado em FastAPI, SQLModel e sistemas escaláveis.'>
+    
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class='custom-cursor' id='customCursor'></div>
+    <div class='custom-cursor-dot' id='customCursorDot'></div>
+
+    <!-- Particles Background -->
+    <div class='particles-container' id='particlesContainer'></div>
+
+    <nav class='navbar'>
+        <div class='nav-container'>
+            <a href='#home' class='nav-logo'>Kayk Estécio</a>
+            <ul class='nav-menu'>
+                <li><a href='#home' class='nav-link'>Início</a></li>
+                <li><a href='#about' class='nav-link'>Sobre</a></li>
+                <li><a href='#projects' class='nav-link'>Projetos</a></li>
+                <li><a href='#contact' class='nav-link'>Contato</a></li>
+            </ul>
+            <button class='theme-toggle' id='themeToggle' aria-label='Alternar tema'>
+                <i class='fas fa-sun'></i>
+            </button>
+            <button class='nav-toggle' id='navToggle'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id='home' class='hero'>
+        <div class='container'>
+            <div class='hero-content'>
+                <h1 class='hero-title'>Olá, sou <span class='name glitch'>Kayk Estécio</span></h1>
+                <p class='hero-subtitle reveal'>Desenvolvedor Python Backend apaixonado por construir sistemas escaláveis e soluções inovadoras.</p>
+                <div class='hero-buttons reveal stagger-1'>
+                    <a href='#projects' class='btn btn-primary'>Ver meus trabalhos</a>
+                    <a href='#contact' class='btn btn-secondary'>Entrar em contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='about' class='about'>
+        <div class='container'>
+            <h2 class='section-title reveal'>Sobre</h2>
+            <div class='about-content'>
+                <p class='reveal stagger-1'>Totalmente comprometido com a filosofia de aprendizado contínuo, sou um desenvolvedor Python Backend com profunda paixão por FastAPI, SQLModel e tudo relacionado a desenvolvimento backend. A combinação única de criatividade, lógica, tecnologia e nunca parar de descobrir coisas novas, alimenta minha empolgação e paixão pelo desenvolvimento de software.</p>
+                <p class='reveal stagger-2'>Quando não estou no computador, gosto de passar meu tempo lendo, me mantendo em forma e tocando violão.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id='projects' class='projects'>
+        <div class='container'>
+            <h2 class='section-title reveal'>Projetos</h2>
+            <div class='projects-grid'>
+                <div class='project-card reveal-left stagger-1 hover-glow'>
+                    <h3>BookMarket API</h3>
+                    <p>Sistema completo de e-commerce de livros construído com FastAPI, SQLModel, PostgreSQL e Redis.</p>
+                    <div class='project-links'>
+                        <a href='https://github.com/KaykEstecio/API-de-Gerenciamento-de-Biblioteca' target='_blank' class='project-link'>
+                            <i class='fab fa-github'></i> Ver código
+                        </a>
+                    </div>
+                </div>
+                <div class='project-card reveal-scale stagger-2 hover-glow'>
+                    <h3>Encurtador de URL</h3>
+                    <p>Sistema escalável de encurtamento de URLs construído com FastAPI, Redis e analytics.</p>
+                    <div class='project-links'>
+                        <a href='https://github.com/KaykEstecio/encurtador_de_URL' target='_blank' class='project-link'>
+                            <i class='fab fa-github'></i> Ver código
+                        </a>
+                    </div>
+                </div>
+                <div class='project-card reveal-scale stagger-3 hover-glow'>
+                    <h3>API de Gerenciamento de Usuários</h3>
+                    <p>API RESTful para gerenciamento de usuários construída com FastAPI e SQLAlchemy.</p>
+                    <div class='project-links'>
+                        <a href='https://github.com/KaykEstecio/api.cadastro' target='_blank' class='project-link'>
+                            <i class='fab fa-github'></i> Ver código
+                        </a>
+                    </div>
+                </div>
+                <div class='project-card reveal-right stagger-4 hover-glow'>
+                    <h3>Sabor Novo</h3>
+                    <p>API para gestão de restaurantes construída com FastAPI, PostgreSQL e WebSocket.</p>
+                    <div class='project-links'>
+                        <a href='https://github.com/KaykEstecio/sabor-novo' target='_blank' class='project-link'>
+                            <i class='fab fa-github'></i> Ver código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='contact' class='contact'>
+        <div class='container'>
+            <h2 class='section-title reveal'>Contato</h2>
+            <div class='contact-content'>
+                <p class='reveal stagger-1'>Tem alguma dúvida ou quer trabalhar junto? Entre em contato e responderei o mais rápido possível.</p>
+                <div class='contact-info'>
+                    <a href='mailto:kayknascimento21@gmail.com' class='contact-item reveal-left stagger-2'>
+                        <i class='fas fa-envelope'></i> kayknascimento21@gmail.com
+                    </a>
+                    <a href='https://github.com/KaykEstecio' target='_blank' class='contact-item reveal stagger-3'>
+                        <i class='fab fa-github'></i> github.com/KaykEstecio
+                    </a>
+                    <a href='https://linkedin.com/in/kaykestecio' target='_blank' class='contact-item reveal-right stagger-4'>
+                        <i class='fab fa-linkedin'></i> linkedin.com/in/kaykestecio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class='footer'>
+        <div class='container'>
+            <p>&copy; 2026 Kayk Estécio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src='js/main.js?v=3'></script>
+</body>
+</html>
