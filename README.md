@@ -1,6 +1,12 @@
 ﻿# Portfólio - Kayk Estécio
 
-Portfólio pessoal de Kayk Estécio, estudante de Análise e Desenvolvimento de Sistemas com foco em backend Python, APIs, bancos de dados e desenvolvimento web.
+Portfólio profissional de Kayk Estécio, estudante de Análise e Desenvolvimento de Sistemas e Técnico de TI Júnior em São Paulo/SP.
+
+O site apresenta trajetória, habilidades, formação e projetos ligados a backend, suporte técnico, automação, APIs, banco de dados e desenvolvimento web.
+
+## Site publicado
+
+https://portifolio-mu-teal.vercel.app/
 
 ## Estrutura
 
@@ -20,7 +26,7 @@ Portfólio pessoal de Kayk Estécio, estudante de Análise e Desenvolvimento de 
 - HTML semântico
 - CSS responsivo
 - JavaScript com ES Modules
-- GitHub Pages
+- Deploy na Vercel
 
 ## Desenvolvimento local
 
@@ -34,8 +40,8 @@ Depois acesse `http://localhost:4173`.
 
 ## Conteúdo
 
-Os projetos são mantidos em `data/projects.js`. Informações profissionais e links principais ficam em `index.html`.
+Os projetos são mantidos em `data/projects.js`. Informações profissionais, formação, contato e metadados ficam em `index.html`.
 
 ## Publicação
 
-O workflow em `.github/workflows/deploy.yml` publica a branch `main` no GitHub Pages.
+O projeto está configurado para publicação na Vercel.

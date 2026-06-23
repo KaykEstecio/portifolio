@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://kaykestecio.github.io/portifolio/sitemap.xml
+Sitemap: https://portifolio-mu-teal.vercel.app/sitemap.xml
