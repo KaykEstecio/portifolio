@@ -98,7 +98,96 @@
                 </div>
             </div>
         </section>
-        <section class="section projects-section" id="projetos" aria-labelledby="projects-title"><div class="container"><div class="section-heading section-heading-horizontal"><div><p class="section-index section-index-light">03 / Projetos</p><h2 id="projects-title">Projetos em destaque</h2></div><p>Projetos acadêmicos e de estudo usados para praticar regras de negócio, banco de dados, autenticação, documentação e deploy.</p></div><div class="projects-list" data-projects-list aria-live="polite"></div><noscript><p class="noscript-message">Ative o JavaScript para visualizar os detalhes dos projetos. Os repositórios continuam disponíveis no <a href="https://github.com/KaykEstecio">GitHub</a>.</p></noscript></div></section>
+        <section class="section projects-section" id="projetos" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading section-heading-horizontal">
+                    <div>
+                        <p class="section-index section-index-light">03 / Projetos</p>
+                        <h2 id="projects-title">Projetos em destaque</h2>
+                    </div>
+                    <p>Projetos acadêmicos e de estudo apresentados com foco em backend, regras de negócio, autenticação, dados, documentação e deploy.</p>
+                </div>
+                <div class="projects-list" data-projects-list>
+                    <article class="featured-project">
+                        <div class="featured-project-media">
+                            <img src="assets/images/projects/nands-burguer-preview.webp" alt="Conceito visual do sistema NANDS Burger com cardápio, carrinho e experiência de pedidos" loading="lazy">
+                        </div>
+                        <div class="featured-project-content">
+                            <p class="project-type">Sistema Web para Hamburgueria</p>
+                            <h3>NANDS Burger</h3>
+                            <dl class="project-details">
+                                <div><dt>Problema</dt><dd>Uma hamburgueria precisa organizar produtos, pedidos e acesso administrativo em um sistema que possa ser apresentado como projeto acadêmico e evoluir para uso real.</dd></div>
+                                <div><dt>Solução</dt><dd>Construí um sistema web com cadastro de produtos, fluxo de pedidos, autenticação e área administrativa, conectando interface, rotas da aplicação e persistência de dados.</dd></div>
+                                <div><dt>O que implementei</dt><dd><ul><li>Estrutura de rotas para operações do sistema</li><li>Modelagem inicial de dados com Prisma</li><li>Fluxo de autenticação para separar acesso comum e administrativo</li><li>Organização de produtos e pedidos para o painel administrativo</li><li>Publicação do projeto na Vercel e documentação no GitHub</li></ul></dd></div>
+                                <div><dt>Resultado</dt><dd>Demonstra que consigo transformar uma regra de negócio simples em uma aplicação web estruturada, com preocupação em dados, autenticação, deploy e documentação.</dd></div>
+                            </dl>
+                            <div class="project-tech-block">
+                                <p class="project-detail-label">Tecnologias</p>
+                                <ul class="project-stack" aria-label="Tecnologias utilizadas"><li>Node.js</li><li>Prisma</li><li>JavaScript</li><li>Banco de dados</li><li>Vercel</li></ul>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-status">Projeto principal · acadêmico em evolução</span>
+                                <div class="project-actions">
+                                    <a class="project-link" href="https://github.com/KaykEstecio/NANDSBURGUER" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                                    <span class="project-link project-link-disabled" aria-disabled="true">Deploy em breve</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="secondary-projects">
+                        <article class="secondary-project">
+                            <div class="secondary-project-header">
+                                <p class="project-index">02</p>
+                                <p class="project-type">Aplicação web backend</p>
+                            </div>
+                            <h3>Sistema de Aluguel de Veículos</h3>
+                            <dl class="project-details">
+                                <div><dt>Problema</dt><dd>Um sistema de reservas precisa controlar usuários, veículos disponíveis e operações de aluguel sem perder a organização das regras de negócio.</dd></div>
+                                <div><dt>Solução</dt><dd>Desenvolvi uma aplicação web para simular cadastro, autenticação, catálogo de veículos e fluxo de reservas, aproximando conceitos de backend e banco de dados.</dd></div>
+                                <div><dt>O que implementei</dt><dd><ul><li>Rotas para cadastro, login e navegação do sistema</li><li>Operações de CRUD para organizar dados da aplicação</li><li>Validação básica das informações enviadas pelo usuário</li><li>Templates HTML/CSS integrados ao backend Flask</li><li>Separação inicial das regras de reserva e controle de veículos</li></ul></dd></div>
+                                <div><dt>Resultado</dt><dd>Mostra minha base em desenvolvimento web com Python, organização de rotas, autenticação, CRUD e aplicação de regras de negócio em um contexto prático.</dd></div>
+                            </dl>
+                            <div class="project-tech-block">
+                                <p class="project-detail-label">Tecnologias</p>
+                                <ul class="project-stack" aria-label="Tecnologias utilizadas"><li>Python</li><li>Flask</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-status">Projeto acadêmico · documentação em evolução</span>
+                                <div class="project-actions">
+                                    <span class="project-link project-link-disabled" aria-disabled="true">GitHub em breve</span>
+                                    <span class="project-link project-link-disabled" aria-disabled="true">Deploy em breve</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="secondary-project">
+                            <div class="secondary-project-header">
+                                <p class="project-index">03</p>
+                                <p class="project-type">Projeto de lógica e dados</p>
+                            </div>
+                            <h3>Controle de Gastos</h3>
+                            <dl class="project-details">
+                                <div><dt>Problema</dt><dd>Registrar despesas manualmente dificulta acompanhar categorias, entradas e saídas de forma organizada.</dd></div>
+                                <div><dt>Solução</dt><dd>Criei um projeto em Python para registrar gastos, validar entradas, organizar registros e praticar manipulação de dados com uma estrutura simples.</dd></div>
+                                <div><dt>O que implementei</dt><dd><ul><li>Entrada e validação de dados no fluxo do programa</li><li>Organização de registros por categoria</li><li>Funções para separar responsabilidades do código</li><li>Tratamento básico de informações financeiras</li><li>Estrutura pensada para futura integração com banco de dados</li></ul></dd></div>
+                                <div><dt>Resultado</dt><dd>Demonstra fundamentos importantes para backend: lógica, validação, organização de dados e evolução gradual de um script para uma aplicação mais completa.</dd></div>
+                            </dl>
+                            <div class="project-tech-block">
+                                <p class="project-detail-label">Tecnologias</p>
+                                <ul class="project-stack" aria-label="Tecnologias utilizadas"><li>Python</li><li>Lógica de programação</li><li>Manipulação de dados</li></ul>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-status">Projeto de estudo · evolução contínua</span>
+                                <div class="project-actions">
+                                    <span class="project-link project-link-disabled" aria-disabled="true">GitHub em breve</span>
+                                    <span class="project-link project-link-disabled" aria-disabled="true">Deploy em breve</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <a class="all-projects-link" href="https://github.com/KaykEstecio?tab=repositories" target="_blank" rel="noopener noreferrer">Explorar outros projetos no GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
         <section class="section" id="formacao" aria-labelledby="education-title"><div class="container split-section"><div class="section-heading"><p class="section-index">04 / Formação</p><h2 id="education-title">Formação, cursos e prática profissional.</h2></div><div class="education-list"><article class="education-item"><div><p class="education-status">Fev/2024 · cursando</p><h3>Análise e Desenvolvimento de Sistemas · UNISA</h3></div><p>Formação voltada a desenvolvimento de software, banco de dados, análise de sistemas, lógica e fundamentos de engenharia.</p></article><article class="education-item"><div><p class="education-status">Mar/2026 · atual</p><h3>Técnico de TI Júnior · Escola Primeira</h3></div><p>Suporte a usuários, manutenção preventiva e corretiva, configuração de sistemas, redes básicas, periféricos, projetores e equipamentos audiovisuais.</p></article><article class="education-item"><div><p class="education-status">Cursos recentes</p><h3>Python, banco de dados e programação</h3></div><p>Formação complementar pela Fundação Bradesco e Alura em Python, POO, modelagem e implementação de banco de dados, HTML, CSS, JavaScript e fundamentos de lógica.</p></article></div></div></section>
         <section class="section contact-section" id="contato" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="section-index">05 / Contato</p><h2 id="contact-title">Vamos conversar sobre tecnologia, suporte ou desenvolvimento?</h2></div><div class="contact-copy"><p>Estou aberto a oportunidades em desenvolvimento backend, suporte técnico, automação de processos e projetos web em que eu possa contribuir com organização, atendimento ao usuário e evolução técnica.</p><a class="contact-email" href="mailto:kayknascimento21@gmail.com">kayknascimento21@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/KaykEstecio" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://linkedin.com/in/kaykestecio" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="assets/documents/kayk-estecio-curriculo.pdf" target="_blank" rel="noopener noreferrer">Currículo em PDF</a></div></div></div></section>
     </main>
