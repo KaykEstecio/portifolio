@@ -6,7 +6,7 @@ initNavigation();
 renderProjects();
 document.querySelector("[data-current-year]").textContent = new Date().getFullYear();
 
-const revealElements = document.querySelectorAll(".section-heading, .about-copy, .tech-group, .project-card, .education-item, .contact-copy");
+const revealElements = document.querySelectorAll(".section-heading, .about-content, .tech-group, .featured-project, .secondary-project, .education-item, .contact-copy");
 revealElements.forEach((element) => element.setAttribute("data-reveal", ""));
 
 if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

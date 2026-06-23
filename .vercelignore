@@ -1,0 +1,11 @@
+.git
+.github
+.agents
+.codex
+node_modules
+tmp
+temp
+.env
+.env.*
+*.log
+desktop.ini
