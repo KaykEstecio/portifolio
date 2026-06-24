@@ -741,3 +741,160 @@
 .experience-body li::marker {
   color: var(--color-technical);
 }
+
+/* Visual polish */
+.hero {
+  min-height: min(860px, calc(100svh - var(--header-height)));
+}
+
+.hero-copy h1 {
+  max-width: 14.5ch;
+}
+
+.hero-intro {
+  max-width: 45rem;
+  color: #46556a;
+}
+
+.hero-availability {
+  width: fit-content;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid rgba(10, 116, 108, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.architecture-card {
+  border-color: #2b3b55;
+  box-shadow: 0 24px 60px rgba(13, 23, 41, 0.18);
+}
+
+.architecture-node {
+  border-radius: 10px;
+}
+
+.about-copy p:first-child {
+  max-width: 34rem;
+}
+
+.profile-facts div,
+.tech-group,
+.education-item,
+.experience-item {
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.profile-facts div:hover,
+.education-item:hover,
+.experience-item:not(.experience-item-featured):hover {
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.tech-list,
+.education-list,
+.experience-list,
+.profile-facts {
+  border-color: rgba(211, 219, 231, 0.9);
+}
+
+.tech-group {
+  padding-block: 1.7rem;
+}
+
+.tech-group:hover {
+  padding-inline: 1.1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.tech-group li,
+.project-stack li {
+  border-radius: 999px;
+}
+
+.projects-section {
+  background: #0c1627;
+}
+
+.featured-project {
+  border-color: #34445f;
+  background: #121f34;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.22);
+}
+
+.featured-project-content {
+  padding: clamp(2rem, 4.6vw, 4rem);
+}
+
+.featured-project h3 {
+  margin-bottom: var(--space-4);
+}
+
+.project-details {
+  gap: 0.85rem;
+}
+
+.project-details div {
+  padding: 0.85rem 0 0.85rem 1rem;
+  border-left-color: #3d4f6c;
+}
+
+.project-details div:nth-child(2) {
+  border-left-color: #68d6c9;
+}
+
+.project-details dd,
+.project-details li,
+.project-summary {
+  color: #bac5d5;
+}
+
+.project-tech-block {
+  margin-top: var(--space-5);
+}
+
+.secondary-project {
+  min-height: 0;
+  border: 1px solid #34445f;
+  border-radius: 16px;
+  background: rgba(20, 33, 55, 0.62);
+}
+
+.secondary-project:nth-child(2) {
+  background: rgba(16, 45, 53, 0.38);
+}
+
+.secondary-project:hover {
+  border-color: #53647c;
+  background: #142137;
+}
+
+.project-actions .project-link {
+  min-height: 2.85rem;
+  padding-inline: 1rem;
+  border-radius: 9px;
+}
+
+.all-projects-link {
+  justify-self: start;
+}
+
+.experience-item-featured {
+  border-color: rgba(10, 116, 108, 0.22);
+  background: #fbfcfe;
+}
+
+.experience-item-featured .experience-period {
+  width: fit-content;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(10, 116, 108, 0.08);
+}
+
+.contact-section {
+  background: #fbfcfe;
+}
+
+.contact-email {
+  letter-spacing: -0.03em;
+}

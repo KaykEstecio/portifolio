@@ -8,7 +8,7 @@ function projectActionTemplate(url, label, placeholderLabel, ariaLabel) {
   const isPlaceholder = !url || url === "#";
 
   if (isPlaceholder) {
-    return `<a class="project-link project-link-placeholder" href="#" aria-label="${ariaLabel}" title="Link será adicionado em breve">${placeholderLabel} <span aria-hidden="true">↗</span></a>`;
+    return `<a class="project-link project-link-placeholder" href="#" aria-label="${ariaLabel} ainda não disponível" aria-disabled="true" title="Link será adicionado em breve">${placeholderLabel} <span aria-hidden="true">↗</span></a>`;
   }
 
   return `<a class="project-link" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${ariaLabel}">${label} <span aria-hidden="true">↗</span></a>`;

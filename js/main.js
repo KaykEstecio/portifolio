@@ -6,7 +6,7 @@ initNavigation();
 renderProjects();
 document.querySelector("[data-current-year]").textContent = new Date().getFullYear();
 
-const revealElements = document.querySelectorAll(".section-heading, .about-content, .tech-group, .featured-project, .secondary-project, .education-item, .contact-copy");
+const revealElements = document.querySelectorAll(".section-heading, .about-content, .tech-group, .featured-project, .secondary-project, .experience-item, .education-item, .contact-copy");
 revealElements.forEach((element) => element.setAttribute("data-reveal", ""));
 
 if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -22,3 +22,9 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
 } else {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }
+document.addEventListener("click", (event) => {
+  const placeholderLink = event.target.closest(".project-link-placeholder");
+  if (!placeholderLink) return;
+
+  event.preventDefault();
+});

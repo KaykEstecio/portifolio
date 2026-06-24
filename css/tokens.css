@@ -37,3 +37,17 @@
   --shadow-soft: 0 18px 50px rgba(16, 30, 54, 0.12);
   --transition: 180ms ease;
 }
+
+/* Visual polish: editorial and technical */
+:root {
+  --color-bg: #f3f5f8;
+  --color-surface-soft: #edf1f6;
+  --color-text: #111b2f;
+  --color-muted: #526074;
+  --color-border: #d3dbe7;
+  --color-accent: #1f5fd6;
+  --color-accent-hover: #184ba9;
+  --color-technical: #0a746c;
+  --radius-lg: 18px;
+  --shadow-soft: 0 16px 42px rgba(17, 27, 47, 0.1);
+}

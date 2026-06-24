@@ -18,7 +18,7 @@
     // TODO: inserir aqui o link real do deploy do NANDS Burger quando estiver disponível.
     deploy: "#",
     image: "assets/images/projects/nands-burguer-preview.webp",
-    imageAlt: "Conceito visual do sistema NANDS Burger com cardápio, carrinho e experiência de pedidos",
+    imageAlt: "Tela conceitual do projeto NANDS Burger mostrando cardápio, carrinho e fluxo de pedidos",
     featured: true,
   },
   {

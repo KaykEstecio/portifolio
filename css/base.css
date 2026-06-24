@@ -117,3 +117,26 @@ button {
 .skip-link:focus {
   transform: translateY(0);
 }
+
+/* Visual polish */
+body {
+  background:
+    linear-gradient(90deg, rgba(211, 219, 231, 0.32) 1px, transparent 1px) 0 0 / 72px 72px,
+    var(--color-bg);
+}
+
+.section {
+  padding-block: clamp(5.25rem, 8vw, 8.5rem);
+}
+
+.section-heading-horizontal {
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.section-heading h2 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
